@@ -1,4 +1,4 @@
-package com.married.got.just.we.ingom.penji.pengom
+package com.married.got.just.we.ingom.penji.pengom.main
 
 
 import android.os.Bundle
@@ -6,15 +6,23 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.married.got.just.we.ingom.penji.pengom.R
 
-open class AnniversaryFragment: Fragment() {
+class MottoFragment : Fragment() {
+
+    companion object {
+        lateinit var instance: MottoFragment
+            private set
+    }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        instance = this
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return super.onCreateView(inflater, container, savedInstanceState)
+        var rootView = inflater?.inflate(R.layout.fragment_motto, container, false)
+        return rootView
     }
 }
