@@ -2,4 +2,7 @@
     <string name="app_name">Pengom</string>
     <string name="motto">가훈</string>
     <string name="anniversary">기념일</string>
+    <string name="note">노트</string>
+    <string name="moenybook">가계부</string>
+    <string name="i_will_make_it_soon">곧 만들어 줄게요. ^^</string>
 </resources>
