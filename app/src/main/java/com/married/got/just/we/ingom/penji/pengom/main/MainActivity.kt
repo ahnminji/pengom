@@ -11,10 +11,11 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import com.married.got.just.we.ingom.penji.pengom.R
-import com.married.got.just.we.ingom.penji.pengom.R.id.moneyBook
-import com.married.got.just.we.ingom.penji.pengom.R.id.shareNote
+import com.married.got.just.we.ingom.penji.pengom.R.id.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.layout_app_bar_main.*
+
+
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -27,7 +28,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         lyt_main_tab.setupWithViewPager(view_pager_main)
 
         view_navigation_main.setNavigationItemSelectedListener(this)
-
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
